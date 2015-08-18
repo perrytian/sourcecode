@@ -1,0 +1,21 @@
+2015-06-12 09:59:25 AbstractFileConfiguration.java(588) [setFileName] [main] 0 DEBUG  -FileName set to conf/commons.configuration.demo.properties
+2015-06-12 09:59:25 ConfigurationUtils.java(449) [locate] [main] 48 DEBUG  -ConfigurationUtils.locate(): base is null, name is conf/commons.configuration.demo.properties
+2015-06-12 09:59:25 DefaultFileSystem.java(281) [locateFromURL] [main] 48 DEBUG  -Could not locate file conf/commons.configuration.demo.properties at null: no protocol: conf/commons.configuration.demo.properties
+2015-06-12 09:59:25 ConfigurationUtils.java(493) [locate] [main] 111 DEBUG  -Loading configuration from the path conf\commons.configuration.demo.properties
+2015-06-12 09:59:25 AbstractFileConfiguration.java(626) [setBasePath] [main] 111 DEBUG  -Base path set to file:///D:/workspace/sourcecode/conf/commons.configuration.demo.properties
+2015-06-12 10:03:20 AbstractFileConfiguration.java(588) [setFileName] [main] 0 DEBUG  -FileName set to conf/commons.configuration.demo.properties
+2015-06-12 10:03:20 ConfigurationUtils.java(449) [locate] [main] 12 DEBUG  -ConfigurationUtils.locate(): base is null, name is conf/commons.configuration.demo.properties
+2015-06-12 10:03:20 DefaultFileSystem.java(281) [locateFromURL] [main] 13 DEBUG  -Could not locate file conf/commons.configuration.demo.properties at null: no protocol: conf/commons.configuration.demo.properties
+2015-06-12 10:03:20 ConfigurationUtils.java(493) [locate] [main] 31 DEBUG  -Loading configuration from the path conf\commons.configuration.demo.properties
+2015-06-12 10:03:20 AbstractFileConfiguration.java(626) [setBasePath] [main] 32 DEBUG  -Base path set to file:///D:/workspace/sourcecode/conf/commons.configuration.demo.properties
+2015-06-12 10:03:20 ConfigurationUtils.java(449) [locate] [main] 193 DEBUG  -ConfigurationUtils.locate(): base is null, name is conf/commons.configuration.config.xml
+2015-06-12 10:03:20 DefaultFileSystem.java(281) [locateFromURL] [main] 193 DEBUG  -Could not locate file conf/commons.configuration.config.xml at null: no protocol: conf/commons.configuration.config.xml
+2015-06-12 10:03:20 ConfigurationUtils.java(493) [locate] [main] 195 DEBUG  -Loading configuration from the path conf\commons.configuration.config.xml
+2015-06-12 10:06:49 AbstractFileConfiguration.java(588) [setFileName] [main] 0 DEBUG  -FileName set to conf/commons.configuration.demo.properties
+2015-06-12 10:06:49 ConfigurationUtils.java(449) [locate] [main] 16 DEBUG  -ConfigurationUtils.locate(): base is null, name is conf/commons.configuration.demo.properties
+2015-06-12 10:06:49 DefaultFileSystem.java(281) [locateFromURL] [main] 17 DEBUG  -Could not locate file conf/commons.configuration.demo.properties at null: no protocol: conf/commons.configuration.demo.properties
+2015-06-12 10:06:49 ConfigurationUtils.java(493) [locate] [main] 52 DEBUG  -Loading configuration from the path conf\commons.configuration.demo.properties
+2015-06-12 10:06:49 AbstractFileConfiguration.java(626) [setBasePath] [main] 53 DEBUG  -Base path set to file:///D:/workspace/sourcecode/conf/commons.configuration.demo.properties
+2015-06-12 10:06:49 ConfigurationUtils.java(449) [locate] [main] 386 DEBUG  -ConfigurationUtils.locate(): base is null, name is conf/commons.configuration.config.xml
+2015-06-12 10:06:49 DefaultFileSystem.java(281) [locateFromURL] [main] 387 DEBUG  -Could not locate file conf/commons.configuration.config.xml at null: no protocol: conf/commons.configuration.config.xml
+2015-06-12 10:06:49 ConfigurationUtils.java(493) [locate] [main] 388 DEBUG  -Loading configuration from the path conf\commons.configuration.config.xml

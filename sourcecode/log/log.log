@@ -1,0 +1,4 @@
+2015-08-05 09:38:32 Syslog4jServerDemo.java(93) [event] [SyslogServer: udp] 0 INFO  -接收到SYSLOG消息：{UNKNOWN} Wed Aug 05 09:38:32 CST 2015 INFO Aug  5 09:38:32 unicom-PC Today is good day!!
+2015-08-05 09:38:32 Syslog4jServerDemo.java(52) [emit] [main] 0 INFO  -Aug  5 09:38:32 unicom-PC Today is good day!!
+2015-08-05 09:38:44 Syslog4jServerDemo.java(93) [event] [SyslogServer: udp] 12174 INFO  -接收到SYSLOG消息：{UNKNOWN} Wed Aug 05 09:38:44 CST 2015 INFO Aug  5 09:38:44 unicom-PC Today is good day!!
+2015-08-05 09:38:44 Syslog4jServerDemo.java(52) [emit] [main] 12175 INFO  -Aug  5 09:38:44 unicom-PC Today is good day!!
