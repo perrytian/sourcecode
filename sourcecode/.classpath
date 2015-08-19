@@ -7,19 +7,14 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/json-lib-2.2-jdk15.jar"/>
-	<classpathentry kind="lib" path="lib/gson-2.2.2.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.7.5.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.5.jar"/>
 	<classpathentry kind="lib" path="lib/zookeeper-3.4.5.jar"/>
-	<classpathentry kind="lib" path="lib/c3p0-oracle-thin-extras-0.9.5.jar"/>
-	<classpathentry kind="lib" path="lib/c3p0-0.9.5.jar"/>
 	<classpathentry kind="lib" path="lib/mchange-commons-java-0.2.9.jar"/>
 	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
-	<classpathentry kind="lib" path="lib/commons-configuration-1.10.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
 	<classpathentry kind="lib" path="lib/jersey2/asm-3.1.jar"/>
 	<classpathentry kind="lib" path="lib/jersey2/c3p0-0.9.5.jar"/>
 	<classpathentry kind="lib" path="lib/jersey2/c3p0-oracle-thin-extras-0.9.5.jar"/>
@@ -65,5 +60,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/kafka/kafka_2.10-0.8.1.2.2.0.0-2041.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
