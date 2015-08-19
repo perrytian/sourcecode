@@ -698,6 +698,7 @@ public class FileUtil {
     * @param dtime
     * @return
     */
+   /*
    public static final int countPics(String id,String dtime,String extensions){
 	   int counts = 0; 
 	   
@@ -723,5 +724,5 @@ public class FileUtil {
     	   
 	   return counts;
    }
-
+    */
 }

@@ -1,7 +1,6 @@
 /**
  * 
  */
-package com.gootrip.util;
 
 import java.io.File;
 import java.io.FileFilter;

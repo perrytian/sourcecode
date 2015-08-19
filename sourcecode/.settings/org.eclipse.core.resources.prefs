@@ -1,7 +1,9 @@
 eclipse.preferences.version=1
 encoding//src/CharTools.java=GBK
-encoding//src/DealString.java=US-ASCII
+encoding//src/DealString.java=UTF-8
+encoding//src/bytes/util/BytesUtil.java=UTF-8
 encoding//src/date/DateHandler.java=GBK
 encoding//src/hbase/HBaseOper.java=UTF-8
+encoding//src/ping/PingOperImpl.java=UTF-8
 encoding//src/zookeeper/ConfigWatcher.java=UTF-8
 encoding/<project>=UTF-8

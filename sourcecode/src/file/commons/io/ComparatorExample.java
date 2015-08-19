@@ -63,17 +63,5 @@ public final class ComparatorExample {
             Date modified = new Date(file.lastModified());
             System.out.println("\t"+ file.getName() + " last modified on: " + modified);
         }
-        
-        // Or, we can also compare 2 specific files and find which one was last modified.
-        //      returns > 0 if the first file was last modified.
-        //      returns  0)
-            System.out.println("File " + file1.getName() + " was modified last because...");
-        else
-            System.out.println("File " + file2.getName() + "was modified last because...");
-        
-        System.out.println("\t"+ file1.getName() + " last modified on: " +
-                new Date(file1.lastModified()));
-        System.out.println("\t"+ file2.getName() + " last modified on: " +
-                new Date(file2.lastModified()));
     }
 }

@@ -1,6 +1,9 @@
 
 import java.io.*;
+
+import file.FileHelper;
 import gnu.getopt.*;
+
 import java.text.MessageFormat;
 import java.util.ResourceBundle;
 import java.util.Locale;

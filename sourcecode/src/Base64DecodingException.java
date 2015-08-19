@@ -1,4 +1,4 @@
-package com.gootrip.util;
+
 
 /*
  * Base64 decoding exception.

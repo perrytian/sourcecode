@@ -46,7 +46,6 @@ public class ConnectionReference{
 	}
 
 	public void execute() throws Exception{
-		Performance.getInstance().setQueryCount();
 		
 		long start = System.currentTimeMillis();
 		int serviceCode = request.getHeader().getA3ServiceCode();
@@ -84,9 +83,7 @@ public class ConnectionReference{
 					logger.info(buffer.toString());
 				}
 				
-				Performance.getInstance().setDuration(System.currentTimeMillis()-startTime,processor.getResultCount());
 			}catch(QueryException e){
-				Performance.getInstance().setErrorCount();
 				
 				Packet packet = new Packet();
 				
@@ -105,7 +102,6 @@ public class ConnectionReference{
 				throw e;
 			}
 		}else{
-			Performance.getInstance().setErrorCount();
 			Packet packet = new Packet();
 			
 			H2Header packHeader = packet.getHeader();
