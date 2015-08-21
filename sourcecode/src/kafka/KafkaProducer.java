@@ -46,7 +46,7 @@ public class KafkaProducer {
 	public void send(String content) throws Exception{
 		KeyedMessage<Integer, String> message = new KeyedMessage<Integer, String>(
 				topic, content);
-		producer.send(message);	
+		//producer.send(message);	
 	}
 
 	public void send(List<String> contents) throws Exception {
