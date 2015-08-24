@@ -1,4 +1,4 @@
-package snmp;
+package snmp.trap;
 
 import org.apache.log4j.Logger;
 import org.snmp4j.mp.SnmpConstants;

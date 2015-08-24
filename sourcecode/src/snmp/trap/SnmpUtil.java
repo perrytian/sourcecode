@@ -1,4 +1,4 @@
-package snmp;
+package snmp.trap;
 
 import java.io.IOException;
 import java.util.Vector;
