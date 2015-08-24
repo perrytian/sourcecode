@@ -1,4 +1,4 @@
-package ThreadPool;
+package threadpool;
 
 import java.sql.SQLException;
 import java.util.concurrent.BlockingQueue;

@@ -1,4 +1,4 @@
-package ThreadPool;
+package threadpool;
 
 import java.lang.Thread.State;
 import java.util.concurrent.ArrayBlockingQueue;

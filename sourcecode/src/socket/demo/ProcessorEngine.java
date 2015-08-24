@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 import org.apache.log4j.Logger;
 
-import ThreadPool.WorkThread;
+import threadpool.WorkThread;
 
 
 /**
