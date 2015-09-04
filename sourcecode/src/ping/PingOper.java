@@ -1,7 +1,5 @@
 package ping;
 
-import com.cusi.cnms3.adapter.object.PingResult;
-
 
 public interface PingOper
 {

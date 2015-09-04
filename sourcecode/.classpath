@@ -54,11 +54,6 @@
 	<classpathentry kind="lib" path="lib/syslog/syslog4j-0.9.46-bin.jar"/>
 	<classpathentry kind="lib" path="lib/alibaba.json/fastjson-1.1.37.jar"/>
 	<classpathentry kind="lib" path="lib/commons-net-3.3.jar"/>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/kafka/kafka_2.10-0.8.1.2.2.0.0-2041.jar"/>
 	<classpathentry kind="lib" path="lib/snmp/snmp4j-2.1.0.jar"/>

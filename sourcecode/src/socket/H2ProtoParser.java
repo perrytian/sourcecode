@@ -2,9 +2,11 @@ package socket;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.log4j.Logger;
 
-import com.cusi.ods.hdap.util.ByteArray;
+import bytes.util.ByteArray;
+
 
 /**
  * H2协议解析器

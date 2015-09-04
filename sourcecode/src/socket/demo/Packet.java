@@ -1,6 +1,6 @@
 package socket.demo;
 
-import util.ByteArray;
+import bytes.util.ByteArray;
 
 
 public class Packet {

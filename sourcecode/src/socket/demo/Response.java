@@ -3,7 +3,8 @@ package socket.demo;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cusi.ods.hdap.util.ByteArray;
+import bytes.util.ByteArray;
+
 
 public class Response {
 

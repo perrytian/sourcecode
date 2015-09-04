@@ -12,7 +12,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import org.apache.log4j.Logger;
 
-import util.ByteArray;
+import bytes.util.ByteArray;
 
 public class SocketInstance{
 	

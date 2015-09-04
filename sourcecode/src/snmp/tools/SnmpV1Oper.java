@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import org.snmp4j.mp.SnmpConstants;
 
+import snmp.tools.objects.SnmpTable;
+import snmp.tools.objects.SnmpValue;
+
 /**
  * @author wcye
  *

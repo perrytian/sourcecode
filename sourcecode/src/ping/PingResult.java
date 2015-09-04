@@ -1,7 +1,5 @@
 package ping;
 
-package com.cusi.cnms3.adapter.object;
-
 import java.io.Serializable;
 import java.util.Date;
 

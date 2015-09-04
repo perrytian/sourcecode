@@ -5,11 +5,15 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class DateUtils {
 	
 	private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private static SimpleDateFormat sdfNoSign = new SimpleDateFormat("yyyyMMddHHmmss");
+	
+	private SimpleDateFormat dateSDF=new SimpleDateFormat("EEE MMM d H:m:s z y",Locale.ENGLISH);
+
 
 	/**
 	 * yyyyMMddHHmmss

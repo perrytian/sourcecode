@@ -1,6 +1,8 @@
 package snmp.tools.objects;
 
 
+import snmp.tools.Rfc1213Oper;
+import snmp.tools.Rfc1213OperImpl;
 import snmp.tools.SnmpV1Oper;
 import snmp.tools.SnmpV1OperImpl;
 

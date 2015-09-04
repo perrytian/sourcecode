@@ -3,27 +3,7 @@ package rest.jersey.client;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.UsernamePasswordCredentials;
-import org.apache.commons.httpclient.auth.AuthScope;
-import org.apache.commons.httpclient.methods.DeleteMethod;
-import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.log4j.Logger;
-
-import com.cusi.hods.monitor.ambari.model.ClustInfo;
-import com.cusi.hods.monitor.ambari.model.ComponentInfo;
-import com.cusi.hods.monitor.ambari.model.Components;
-import com.cusi.hods.monitor.ambari.model.HostComponentDetail;
-import com.cusi.hods.monitor.ambari.model.HostComponents;
-import com.cusi.hods.monitor.ambari.model.HostEntity;
-import com.cusi.hods.monitor.ambari.model.Hosts;
-import com.cusi.hods.monitor.ambari.model.HostsInfo;
-import com.cusi.hods.monitor.ambari.model.ServiceComponentInfo;
-import com.cusi.hods.monitor.ambari.model.ServiceComponents;
-import com.cusi.hods.monitor.ambari.model.ServiceEntity;
-import com.cusi.hods.monitor.ambari.model.ServiceInfo;
-import com.cusi.hods.monitor.util.ConfigUtil;
-import com.cusi.hods.monitor.util.JSONUtils;
 
 public class AmbariRestClient {
 	

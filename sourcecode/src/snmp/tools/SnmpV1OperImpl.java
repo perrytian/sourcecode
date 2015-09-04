@@ -643,7 +643,7 @@ public class SnmpV1OperImpl implements SnmpV1Oper {
 					throw new IOException("IP["+target.getAddress().toString()+"] "+response.getErrorStatusText());
 				}
 			}else{
-				Logger.out(Logger.DEBUG, "IP["+target.getAddress().toString()+"]SNMP SET操作返回的PDU为空");
+				logger.debug("IP["+target.getAddress().toString()+"]SNMP SET操作返回的PDU为空");
 			}
 
 //			if (response != null){

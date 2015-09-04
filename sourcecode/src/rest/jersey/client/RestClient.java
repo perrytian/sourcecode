@@ -3,14 +3,6 @@ package rest.jersey.client;
 import java.util.Date;
 import javax.ws.rs.core.UriBuilder;
 import org.apache.log4j.Logger;
-import com.cusi.hods.entity.CbssHdapPerformance;
-import com.cusi.hods.utils.DateUtil;
-import com.cusi.hods.utils.JSONUtils;
-import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.ClientResponse;
-import com.sun.jersey.api.client.WebResource;
-import com.sun.jersey.api.client.config.ClientConfig;
-import com.sun.jersey.api.client.config.DefaultClientConfig;
 
 /**
  * 测试rest服务类

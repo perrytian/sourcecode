@@ -6,8 +6,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
 
+import org.apache.log4j.Logger;
+
 
 public class PingOperImpl implements PingOper{
+	private static Logger logger = Logger.getLogger(PingOperImpl.class);
 	
 	private final String SENT = "Sent = ";
 	private final String CN_SENT = "已发送 = ";
@@ -63,7 +66,7 @@ public class PingOperImpl implements PingOper{
 	{
 		if(!isIPAddress(ip))
 		{
-			Logger.out(Logger.ERROR, "IP地址格式错误:["+ip+"] ，ping测试失败");
+			logger.error("IP地址格式错误:["+ip+"] ，ping测试失败");
 			return null;
 		}
 		
@@ -105,7 +108,7 @@ public class PingOperImpl implements PingOper{
 		else
 		{
 			command.append("ping " + ip + " 2");
-			Logger.out(Logger.DEBUG, "运行PING测试:"+command.toString());
+			logger.debug("运行PING测试:"+command.toString());
 		}
 
 		Runtime runtime = Runtime.getRuntime();
@@ -127,13 +130,13 @@ public class PingOperImpl implements PingOper{
 			}else if(osName.contains("linux")){
 				return generateLinuxPingResult(ip,packetsize,packetcount,br);
 			}else{
-				Logger.out(Logger.WARN, "操作系统:"+osName+" 没有处理PING测试结果的解析类");
+				logger.warn("操作系统:"+osName+" 没有处理PING测试结果的解析类");
 				return null;
 			}
 		}
 		catch(IOException e)
 		{
-			Logger.out(Logger.ERROR, e.getMessage());
+			logger.error(e.getMessage());
 			runtime.exit(1);
 			return null;
 		}finally{
@@ -203,7 +206,7 @@ public class PingOperImpl implements PingOper{
 			{
 				if(line.startsWith("请求超时")||line.toLowerCase().contains("request timed out."))
 				{
-					Logger.out(Logger.ERROR, "PING请求超时:测试IP["+ip+"]");
+					logger.error("PING请求超时:测试IP["+ip+"]");
 //					System.out.println("PING请求超时:测试IP["+ip+"]");
 					continue;
 				}
@@ -212,14 +215,14 @@ public class PingOperImpl implements PingOper{
 					|| line.toLowerCase().contains("Destination Host Unreachable")
 					|| line.contains("无法访问目标主机"))
 				{
-					Logger.out(Logger.ERROR, "PING请求无响应或目标不可达：测试IP["+ip+"]");
+					logger.error("PING请求无响应或目标不可达：测试IP["+ip+"]");
 //					System.out.println("PING请求无响应或目标不可达：测试IP["+ip+"]");
 					continue;
 				}
 				else if(line.toLowerCase().contains("request could not find host")
 						|| line.contains("请求找不到主机")){
 //					System.out.println("PING 请求找不到主机:测试目标["+ip+"]");
-					Logger.out(Logger.ERROR, "PING 请求找不到主机:测试目标["+ip+"]");
+					logger.error("PING 请求找不到主机:测试目标["+ip+"]");
 					continue;
 				}
 				
@@ -297,7 +300,7 @@ public class PingOperImpl implements PingOper{
 			}
 			
 			if(!isResult){
-				Logger.out(Logger.WARN, "PING测试失败IP["+ip+"]");
+				logger.warn("PING测试失败IP["+ip+"]");
 //				System.out.println("PING测试失败");
 			}
 			PingResult result = new PingResult();
@@ -357,14 +360,14 @@ public class PingOperImpl implements PingOper{
 
 				if(line.contains("请求超时")||line.toLowerCase().contains("request timed out."))
 				{
-					Logger.out(Logger.ERROR, "PING请求超时:测试IP["+ip+"]:" + line);
+					logger.error("PING请求超时:测试IP["+ip+"]:" + line);
 					continue;
 				}
 				else if(line.toLowerCase().startsWith("no answer from")
 					|| line.toLowerCase().contains("unreachable")
 					|| line.toLowerCase().contains("destination host unreachable"))
 				{
-					Logger.out(Logger.ERROR, "PING请求无响应或目标不可达：测试IP["+ip+"]:" + line);
+					logger.error("PING请求无响应或目标不可达：测试IP["+ip+"]:" + line);
 					continue;
 				}
 				
@@ -385,7 +388,7 @@ public class PingOperImpl implements PingOper{
 							if(iter.trim().contains(PACKETRECEIVED)){
 								receivedCount = Integer.parseInt(iter.trim().substring(0, iter.trim().indexOf(PACKETRECEIVED)-1));
 								if(receivedCount<1){
-									Logger.out(Logger.DEBUG, "\n===%&&====ping 结果是："+sb.toString());
+									logger.debug("\n===%&&====ping 结果是："+sb.toString());
 								}
 							}
 							if(sentCount >0 && receivedCount >=0){
@@ -406,7 +409,7 @@ public class PingOperImpl implements PingOper{
 			}
 			
 			if(!isResult){
-				Logger.out(Logger.WARN, "PING测试失败IP["+ip+"]");
+				logger.warn("PING测试失败IP["+ip+"]");
 //				System.out.println("PING测试失败");
 			}
 			PingResult result = new PingResult();
@@ -448,7 +451,7 @@ public class PingOperImpl implements PingOper{
 		buffer.append("平均时延："+result.getRttAverage()+"ms\n");
 		buffer.append("========================================\n");
 //		System.out.println(buffer.toString());
-		Logger.out(Logger.INFO, buffer.toString());
+		logger.info(buffer.toString());
 	}
 	
 //	public static void main(String[] args)
