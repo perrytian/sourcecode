@@ -1,8 +1,13 @@
 package rest.jersey.client;
 
 import java.util.Date;
+
+import javax.ws.rs.client.Client;
 import javax.ws.rs.core.UriBuilder;
+
 import org.apache.log4j.Logger;
+import org.glassfish.jersey.client.ClientConfig;
+import org.glassfish.jersey.client.ClientResponse;
 
 /**
  * 测试rest服务类
