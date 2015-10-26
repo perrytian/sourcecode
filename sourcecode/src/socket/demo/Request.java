@@ -30,25 +30,25 @@ public class Request {
 		this.params = params;
 	}
 
-	public String toString(){
-		StringBuffer ret = new StringBuffer();
-		String serviceName = ServiceCodeConstant.serviceCodeMap.get(header.getA3ServiceCode());
-		if(serviceName!=null)
-			ret.append(ServiceCodeConstant.serviceCodeMap.get(header.getA3ServiceCode()));
-		else{
-			ret.append('?');
-			ret.append('(');
-			ret.append(new String(header.getBytes(),6,6));
-			ret.append(')');
-		}
-		if(params!=null){
-			ret.append(':');
-			for(int i=0;i<params.size();i++){
-				ret.append('(');
-				ret.append(new String(params.get(i)));
-				ret.append(')');
-			}
-		}
-		return ret.toString();
-	}
+//	public String toString(){
+//		StringBuffer ret = new StringBuffer();
+//		String serviceName = ServiceCodeConstant.serviceCodeMap.get(header.getA3ServiceCode());
+//		if(serviceName!=null)
+//			ret.append(ServiceCodeConstant.serviceCodeMap.get(header.getA3ServiceCode()));
+//		else{
+//			ret.append('?');
+//			ret.append('(');
+//			ret.append(new String(header.getBytes(),6,6));
+//			ret.append(')');
+//		}
+//		if(params!=null){
+//			ret.append(':');
+//			for(int i=0;i<params.size();i++){
+//				ret.append('(');
+//				ret.append(new String(params.get(i)));
+//				ret.append(')');
+//			}
+//		}
+//		return ret.toString();
+//	}
 }

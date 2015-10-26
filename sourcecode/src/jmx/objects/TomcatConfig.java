@@ -1,7 +1,5 @@
 package jmx.objects;
 
-package com.cusi.cnms3.adapter.object;
-
 import java.io.Serializable;
 
 public class TomcatConfig implements Serializable{

@@ -1,4 +1,4 @@
-package com.alibaba.fastjson.util;
+package util;
 
 import java.util.Arrays;
 
